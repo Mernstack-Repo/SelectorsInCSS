@@ -35,7 +35,7 @@
       */
 
         span#a1 {
-            display:block;
+            display: block;
             height: 200px;
             width: 200px;
             background-color: aqua;
@@ -52,16 +52,42 @@
        property:value
        }
       */
-      span.b1 {
-            display:block;
+        span.b1 {
+            display: block;
             height: 200px;
             width: 200px;
-            background-color:peru;
+            background-color: peru;
             border: 5px solid black;
             text-align: center;
             margin: auto;
             line-height: 200px;
         }
+
+        /* Example of attribute selector in css
+        HTML Attributes
+        All HTML elements can have attributes
+       Attributes provide additional information about elements
+       Attributes are always specified in the start tag
+       Attributes usually come in name/value pairs like: name="value"
+
+       Example
+       attribute[attributename=value]{
+       property:value
+       }
+      */
+       a[href="https://www.google.com"]
+       {
+        display:block;
+        width:200px;
+        height:200px;
+        background-color: blueviolet;
+        border:5px solid black;
+        margin: auto;
+        text-align: center;
+        line-height: 200px;
+        text-decoration: none;
+        color: brown;
+       }
 
     </style>
 </head>
@@ -72,6 +98,8 @@
     <span id="a1">ID selectors in CSS</span>
     <br>
     <span class="b1">Class Selectors in CSS</span>
+    <br>
+    <a href="https://www.google.com">GO TO Google</a>
 </body>
 
 </html>
