@@ -75,20 +75,50 @@
        property:value
        }
       */
-       a[href="https://www.google.com"]
-       {
-        display:block;
-        width:200px;
-        height:200px;
-        background-color: blueviolet;
-        border:5px solid black;
-        margin: auto;
-        text-align: center;
-        line-height: 200px;
-        text-decoration: none;
-        color: brown;
-       }
+        a[href="https://www.google.com"] {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 5px solid black;
+            margin: auto;
+            text-align: center;
+            line-height: 200px;
+            text-decoration: none;
+            color: brown;
+        }
 
+        /* Example of universal selector in css
+       it will take the body tag and other tags inside body tag into considerations.
+       Example
+       *{
+       property:value
+       }
+      */
+
+        * {
+            border: 2px dashed blue
+        }
+
+        /* Pseudo element selector
+
+      element :: value{
+      property : value
+      } */
+
+        h1::before {
+            content: url("https://www.icegif.com/wp-content/uploads/2022/04/icegif-931.gif")
+        }
+
+        /* Pseudo class selector
+
+      element : value{
+      property : value
+      } */
+
+        div#c1:hover {
+            background-color: greenyellow;
+        }
     </style>
 </head>
 
@@ -100,6 +130,10 @@
     <span class="b1">Class Selectors in CSS</span>
     <br>
     <a href="https://www.google.com">GO TO Google</a>
+    <br>
+    <h1>Pseudo Element Selector</h1>
+    <br>
+    <div id="c1">Pseudo Class Selector</div>
 </body>
 
 </html>
